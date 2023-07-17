@@ -1,0 +1,101 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background 0.5s ease;
+}
+
+.container {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
+    padding: 2rem;
+    color: white;
+    border-radius: 1rem;
+    margin-right: 2%;
+    border-radius: 1rem;
+    font-family: 'unbuntu', sans-serif;
+    transition: background 0.5s ease;
+}
+
+.form{
+    align-items: center;
+    text-align: center;
+}
+.legend-input {
+    margin-bottom: 15px;
+}
+#input-container {
+    display: flex;
+    
+}
+.form input {
+    padding: 0.8rem;
+    border: none;
+    flex: 1;
+    border-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius:0 ;
+    width: 70%;
+    opacity: 0.6;
+}
+  
+.form button {
+    padding: 0.8rem;
+    width: 11%;
+    border: none;
+    cursor: pointer;
+    background-color: #8dd0f8;
+    border-radius: 50px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    opacity: 0.8;
+    color: white;
+}
+
+#weather-data {
+    border-top: 1px solid #FFF;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    text-align: center;
+    align-items: center;
+    
+}
+
+#weather-data h2 i {
+    font-size: 1rem;
+}
+
+.title-city {
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.6rem;
+}
+
+.logo {
+    width: 150px; 
+    margin-top: -45px;
+    margin-bottom: -2%;
+    transition: opacity 0.5s ease;
+}
+
+.data-time{
+    font-family: raleway; 
+    text-align: left;
+    position: absolute;
+    margin-bottom: 2%;
+}
+
+.copy {
+    margin-top: 9.5%;
+    position: absolute;
+    text-align: left;
+    align-items: center;
+    opacity:0.54; 
+    padding: 20px;
+}

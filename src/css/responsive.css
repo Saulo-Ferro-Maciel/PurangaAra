@@ -1,0 +1,13 @@
+@media (max-width: 767px) {
+    body {
+      transform: rotate(90deg);
+      transform-origin: top left;
+      width: 100vh;
+      height: 100vw;
+      overflow-x: hidden;
+      position: fixed;
+      top: 100%;
+      left: 0;
+      margin-top: -100vw;
+    }
+  }

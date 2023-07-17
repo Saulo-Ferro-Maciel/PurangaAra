@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puranga Ara</title>
+    <link 
+        rel="shortcut icon" 
+        type="image/x-icon" 
+        href="./src/img/nuvemsol_png.png"
+        id="icone" 
+    />
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&family=Raleway:wght@300;500&family=Ubuntu+Mono&display=swap"
+        rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" 
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/css/reset.css"/>
+    <link rel="stylesheet" href="./src/css/style.css"/>
+    <link rel="stylesheet" href="./src/css/responsive.css"/>
+    <!-- JS -->
+    <script src="./src/js/script.js" defer></script>
+    
+</head>
+<body onload="mudarBackground()">
+    <div class="container"  style="text-align: center; width: 20%; height: 40%;">
+        <img class="logo"  src="./src/img/nuvemsol_png.png" >
+        <h2 class="data-time"><p class="pt">Bom Dia</p> <p class="nh">Puranga Ara</p></h2>
+        <div class="copy">
+            &copy 2023 Copyright: <br> Saulo Ferro Maciel
+        </div>
+    </div>
+    <div class="container" >
+        <div class="form">
+            <h3 class="legend-input">Confira as mudanças meterológicas de uma região:</h3>
+            <div class="form-input-container">
+                <input
+                    type="text"
+                    id="city-input"
+                    placeholder="Digite o nome da cidade!"
+                />
+                <button id="btn-search" >
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+        <div  id="weather-data">
+            <h2 class="title-city">
+                <i id="icon2" class="fa-solid fa-location-dot"></i>
+                <span id="city" style="margin-left: 5.5px; margin-right: 5.5px;"> Nome da Cidade</span>
+                <img style="width: 9%" src=""  id="county">
+            </h2>
+            <p id="temperature">
+                <span>Estimativa de temperatura em </span>&deg;C
+            </p>
+            <div id="description-container">
+                <p style="margin-top: 1.5px;" id="description"> Descrição Meterológica</p>
+                <img src="https://openweathermap.org/img/wn/02n.png" alt="Condições do tempo" id="weather-icon">
+            </div>
+            <div id="details-container">
+                <p id="umidity">
+                    <i class="fa-solid fa-droplet"></i>
+                    <span>Estimativa de umidade </span>
+                </p>
+                <p id="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <span> Estimativa da velocidade do vento</span>
+                </p>
+            </div>
+        </div>
+    </div>
+     
+</body>
+</html>
