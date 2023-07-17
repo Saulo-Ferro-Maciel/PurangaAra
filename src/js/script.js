@@ -33,7 +33,7 @@ function mudarBackground() {
       ptElement.innerText = "Boa Tarde";
       nhElement.innerText="Puranga Karuka";
       btnElement.style.background = "linear-gradient(to top,  #ffa500 100%, #ffffff 5%)";
-      btnElement.border = "2px solid rgba(255, 255, 255, 0.8)";
+      btnElement.border = "2px solid rgba(255, 255, 255,1)";
     } else if (hora >= 1 && hora <13){
         bodyElement.style.background = "linear-gradient(to top, rgba(89, 76, 238, 1) 0%, #8dd0f8 100%)";       
         containerElement.style.backgroundColor = "linear-gradient(to top, rgba(89, 76, 238, 1)";
