@@ -23,29 +23,31 @@ function mudarBackground() {
     var ptElement = document.querySelector(".pt");
     var nhElement = document.querySelector(".nh");
     var iconeElement = document.getElementById("icone");
-    var weatherColor = document.getElementById("wather-container")
+    var weatherColor = document.getElementById("wather-container");
+    var btnElement = document.getElementById("btn-search");
   
     if (hora >= 13 && hora < 18) {
       bodyElement.style.background =  "linear-gradient(to top,  #ffa500 100%, #ffffff 5%)";
       containerElement.style.backgroundColor ="linear-gradient(to top,  #ffa500 100%, #ffffff 5%)";
-      imageElement.src = "./src/img/nuvemsol_png.png"
-      ptElement.innerText = "Boa Tarde"
-      nhElement.innerText="Puranga Karuka"
+      imageElement.src = "./src/img/nuvemsol_png.png";
+      ptElement.innerText = "Boa Tarde";
+      nhElement.innerText="Puranga Karuka";
+      btnElement.style.background = "#ffffff";
     } else if (hora >= 1 && hora <13){
         bodyElement.style.background = "linear-gradient(to top, rgba(89, 76, 238, 1) 0%, #8dd0f8 100%)";       
         containerElement.style.backgroundColor = "linear-gradient(to top, rgba(89, 76, 238, 1)";
-        imageElement.src = "./src/img/nuvemsol_png.png"
-        ptElement.innerText = "Bom Dia"
-        nhElement.innerText="Puranga Ara"
-        iconeElement.href = "./src/img/nuvemsol_png.png"
+        imageElement.src = "./src/img/nuvemsol_png.png";
+        ptElement.innerText = "Bom Dia";
+        nhElement.innerText="Puranga Ara";
+        iconeElement.href = "./src/img/nuvemsol_png.png";
     }
     else {
       bodyElement.style.background = "linear-gradient(to top, #111111 3%, #333433 100%)"; // Gradiente escuro
       containerElement.style.backgroundColor = "linear-gradient(to top, #111111 3%, #333433 100%)";
-      imageElement.src = "./src/img/luanuvens.png"
-      ptElement.innerText = "Boa Noite"
-      nhElement.innerText="Puranga Pituna"
-      iconeElement.href = "./src/img/luanuvens.png"
+      imageElement.src = "./src/img/luanuvens.png";
+      ptElement.innerText = "Boa Noite";
+      nhElement.innerText="Puranga Pituna";
+      iconeElement.href = "./src/img/luanuvens.png";
 
     }
 }
