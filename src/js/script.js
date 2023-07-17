@@ -23,15 +23,17 @@ function mudarBackground() {
     var ptElement = document.querySelector(".pt");
     var nhElement = document.querySelector(".nh");
     var iconeElement = document.getElementById("icone");
+    var weatherColor = document.getElementById("wather-container")
   
     if (hora >= 13 && hora < 18) {
-      bodyElement.style.background =  "linear-gradient(180deg, #ffffff, #ffa500)";
-      containerElement.style.backgroundColor ="#5c54edd3";
+      bodyElement.style.background =  "linear-gradient(180deg, #ffffff 4%, #ffa500 100%)";
+      containerElement.style.backgroundColor ="linear-gradient(180deg, #ffffff 4%, #ffa500 100%)";
       imageElement.src = "./src/img/nuvemsol_png.png"
       ptElement.innerText = "Boa Tarde"
       nhElement.innerText="Puranga Karuka"
     } else if (hora >= 1 && hora <13){
-        bodyElement.style.background = "linear-gradient(180deg, rgba(89, 76, 238, 1) 0%, #8dd0f8 100%)";         containerElement.style.backgroundColor = "linear-gradient(180deg, rgba(89, 76, 238, 1)";
+        bodyElement.style.background = "linear-gradient(180deg, rgba(89, 76, 238, 1) 0%, #8dd0f8 100%)";       
+        containerElement.style.backgroundColor = "linear-gradient(180deg, rgba(89, 76, 238, 1)";
         imageElement.src = "./src/img/nuvemsol_png.png"
         ptElement.innerText = "Bom Dia"
         nhElement.innerText="Puranga Ara"
