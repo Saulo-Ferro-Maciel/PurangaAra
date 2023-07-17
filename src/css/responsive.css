@@ -11,6 +11,9 @@
       margin-top: -100vw;
     }
     .copy {
-         margin-top: 9%;
+         margin-top: 9.5%;
+    }
+    .container {
+        width: 95%
     }
   }
