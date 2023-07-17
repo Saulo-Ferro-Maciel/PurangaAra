@@ -26,7 +26,7 @@ function mudarBackground() {
     var weatherColor = document.getElementById("wather-container")
   
     if (hora >= 13 && hora < 18) {
-      bodyElement.style.background =  "linear-gradient(to top,  #ffa500 100%, #ffffff 3%";
+      bodyElement.style.background =  "linear-gradient(to top,  #ffa500 100%, #ffffff 3%)";
       containerElement.style.backgroundColor ="linear-gradient(to top, #ffffff 3%, #ffa500 100%)";
       imageElement.src = "./src/img/nuvemsol_png.png"
       ptElement.innerText = "Boa Tarde"
