@@ -78,7 +78,7 @@ body{
 }
 
 .logo {
-    width: 150px; 
+    width: 170px; 
     margin-top: -45px;
     margin-bottom: -2%;
     transition: opacity 0.5s ease;
@@ -92,7 +92,7 @@ body{
 }
 
 .copy {
-    margin-top: 5%;
+    margin-top: 6%;
     position: absolute;
     text-align: left;
     align-items: center;
