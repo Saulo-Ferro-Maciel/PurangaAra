@@ -32,7 +32,8 @@ function mudarBackground() {
       imageElement.src = "./src/img/nuvemsol_png.png";
       ptElement.innerText = "Boa Tarde";
       nhElement.innerText="Puranga Karuka";
-      btnElement.style.backgroundColor = "#ffc499";
+      btnElement.style.backgroundColor = "#8dd0f8";
+      btnElement.opacity = "0.95";
     } else if (hora >= 1 && hora <13){
         bodyElement.style.background = "linear-gradient(to top, rgba(89, 76, 238, 1) 0%, #8dd0f8 100%)";       
         containerElement.style.backgroundColor = "linear-gradient(to top, rgba(89, 76, 238, 1)";
@@ -41,7 +42,7 @@ function mudarBackground() {
         nhElement.innerText="Puranga Ara";
         iconeElement.href = "./src/img/nuvemsol_png.png";
         btnElement.style.background = "#8dd0f8";
-        btnElement.border = "";
+    
     }
     else {
       bodyElement.style.background = "linear-gradient(to top, #111111 3%, #333433 100%)"; // Gradiente escuro
@@ -50,7 +51,7 @@ function mudarBackground() {
       ptElement.innerText = "Boa Noite";
       nhElement.innerText="Puranga Pituna";
       iconeElement.href = "./src/img/luanuvens.png";
-        btnElement.border = "";
+      btnElement.opacity = "1";
 
     }
 }
