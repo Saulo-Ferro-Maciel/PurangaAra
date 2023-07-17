@@ -40,8 +40,8 @@ function mudarBackground() {
         iconeElement.href = "./src/img/nuvemsol_png.png"
     }
     else {
-      bodyElement.style.background = "linear-gradient(180deg, #111111, #333433)"; // Gradiente escuro
-      containerElement.style.backgroundColor = "#696969"
+      bodyElement.style.background = "linear-gradient(180deg, #111111 3%, #333433 100%)"; // Gradiente escuro
+      containerElement.style.backgroundColor = "linear-gradient(180deg, #111111 3%, #333433 100%)";
       imageElement.src = "./src/img/luanuvens.png"
       ptElement.innerText = "Boa Noite"
       nhElement.innerText="Puranga Pituna"
