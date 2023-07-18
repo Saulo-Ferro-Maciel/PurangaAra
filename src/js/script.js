@@ -35,8 +35,8 @@ function mudarBackground() {
       btnElement.style.backgroundColor = "#8dd0f8";
       btnElement.opacity = "0.95";
     } else if (hora >= 1 && hora <13){
-        bodyElement.style.background = "linear-gradient(180deg, rgba(89, 76, 238, 1) 0%, #8dd0f8 100%)";       
-        containerElement.style.backgroundColor = "linear-gradient(180deg, rgba(89, 76, 238, 1)";
+        bodyElement.style.background = "linear-gradient(180deg, #8dd0f8 0%, rgba(89, 76, 238, 1) 100%)";       
+        containerElement.style.backgroundColor = "linear-gradient(180deg, #8dd0f8 0%, rgba(89, 76, 238, 1) 100%)";
         imageElement.src = "./src/img/nuvemsol_png.png";
         ptElement.innerText = "Bom Dia";
         nhElement.innerText="Puranga Ara";
