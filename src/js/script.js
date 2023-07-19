@@ -64,23 +64,14 @@ const getWeatherData = async(city) => {
     
     const sigla_estado = city.split(" ").pop().toUpperCase();
 
-    console.log(sigla_estado);
+    // Preciso imlementar uma forma de consultar estados brasileiro apenas ... Talvez eu troque de API
+    const apiWeatherURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metrics&appid=${apiKey}&lang=pt_br`;
+    const res = await fetch(apiWeatherURL);
+    const data = await res.json();
+    console.log(apiWeatherURL);
+    console.log(data);
+    return data; 
     
-    if (lista_siglas_uf.includes(sigla_estado)) {
-          const apiWeatherURL = `https://api.openweathermap.org/data/2.5/weather?q=${city},${sigla_estado},${BR}&units=metrics&appid=${apiKey}&lang=pt_br`;
-          const res = await fetch(apiWeatherURL);
-          const data = await res.json();
-          console.log(apiWeatherURL);
-          console.log(data);
-          return data; 
-    } else {
-          const apiWeatherURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metrics&appid=${apiKey}&lang=pt_br`;
-          const res = await fetch(apiWeatherURL);
-          const data = await res.json();
-          console.log(apiWeatherURL);
-          console.log(data);
-          return data; 
-    }
     
 }
 
