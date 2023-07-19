@@ -57,12 +57,25 @@ function mudarBackground() {
 }
  
 const getWeatherData = async(city) => {
-    const apiWeatherURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metrics&appid=${apiKey}&lang=pt_br`;
-
-    const res = await fetch(apiWeatherURL);
-    const data = await res.json();
-
-    return data;
+    const lista_siglas_uf = [
+      "AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA",
+      "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN",
+      "RS", "RO", "RR", "SC", "SP", "SE", "TO"];
+    
+    const sigla_estado = city.split(" ").pop().toUpperCase();
+    
+    if (lista_siglas_uf.includes(sigla_estado)) {
+          const apiWeatherURL = `https://api.openweathermap.org/data/2.5/weather?q=${city},${sigla_estado},${BRA}&units=metrics&appid=${apiKey}&lang=pt_br`;
+          const res = await fetch(apiWeatherURL);
+          const data = await res.json();
+          return data; 
+    } else {
+          const apiWeatherURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metrics&appid=${apiKey}&lang=pt_br`;
+          const res = await fetch(apiWeatherURL);
+          const data = await res.json();
+          return data; 
+    }
+    
 }
 
 const showWeatherData = async (city) => {
