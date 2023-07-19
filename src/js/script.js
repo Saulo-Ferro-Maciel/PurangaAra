@@ -63,16 +63,20 @@ const getWeatherData = async(city) => {
       "RS", "RO", "RR", "SC", "SP", "SE", "TO"];
     
     const sigla_estado = city.split(" ").pop().toUpperCase();
+
+    console.log(sigla_estado);
     
     if (lista_siglas_uf.includes(sigla_estado)) {
           const apiWeatherURL = `https://api.openweathermap.org/data/2.5/weather?q=${city},${sigla_estado},${BRA}&units=metrics&appid=${apiKey}&lang=pt_br`;
           const res = await fetch(apiWeatherURL);
           const data = await res.json();
+          console.log(apiWeatherURL);
           return data; 
     } else {
           const apiWeatherURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metrics&appid=${apiKey}&lang=pt_br`;
           const res = await fetch(apiWeatherURL);
           const data = await res.json();
+          console.log(apiWeatherURL);
           return data; 
     }
     
